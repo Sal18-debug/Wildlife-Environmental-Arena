@@ -1,0 +1,412 @@
+
+
+*, * * {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-image:
+    radial-gradient(
+      circle at top right,
+       rgb(0, 98, 255),
+           #e7b5b3
+           
+    );
+    text-align: center;
+    margin:0 auto;
+}
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.4em;
+  margin-top: 20px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+p + h2, p + p a.button, p + p {
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(235, 238, 185);
+}
+
+section.content.iboxes * {
+  margin: 0; padding: 0;
+}
+
+.ibox img {
+  width: 150px;
+  height: 150px;
+}
+
+.welcomecircle img {
+  display: block;
+  width: 200px;
+}
+
+ .buttontower {
+   text-align: center;
+ }
+
+ .buttontower p {
+   display: block;
+   margin: 20px auto;
+ }
+
+ .buttonbuddies {
+   text-align: center;
+ }
+
+ .buttonbuddies p {
+   display: inline-block;
+   margin: 20px;
+   .max-width: 50px;
+ }
+
+ .buttonbuddies p a {
+   min-width: 10ch;
+ }
+
+ #navcontainer ul
+{
+text-align: center;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 0;
+margin-top: 15px;
+margin-left: 0;
+background-color: transparent;
+color: white;
+width: 100%;
+font-family: Arial,Helvetica,sans-serif;
+line-height: 18px;
+}
+
+#navcontainer ul li
+{
+display: inline;
+padding-left: 0;
+padding-right: 0;
+padding-bottom: 5px;
+/* matches link padding except for left and right */
+padding-top: 5px;
+}
+
+#navcontainer ul li a
+{
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-top: 5px;
+color: #666;
+text-decoration: none;
+border-right: 1px solid transparent;
+}
+
+#navcontainer ul li a:hover
+{
+background-color: #d2a6a4;
+color: #333;
+}
+
+#navcontainer #active { border-left: 1px solid #fff; }
+
+#footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul#footlist {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  position: relative;
+  margin: 20px 0 100px 0;
+}
+
+ul#footlist li {
+  display: inline;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+}
+
+#panel1 {left: calc(100% - (1*45px)); width: 36px;
+  background: transparent url(https://global-diary.sjj3.repl.co/images/sprites.jpg)
+    0 0 no-repeat;}
+#panel2 {left: calc(100% - (2*45px)); width: 36px;
+  background: transparent url(https://global-diary.sjj3.repl.co/images/sprites.jpg)
+    -33px 0 no-repeat;}
+#panel3 {left: calc(100% - (3*45px)); width: 36px;
+  background: transparent url(https://global-diary.sjj3.repl.co/images/sprites.jpg)
+    -67px 0 no-repeat;}
+#panel4 {left: calc(100% - (4*45px)); width: 36px;
+  background: transparent url(https://global-diary.sjj3.repl.co/images/sprites.jpg)
+   -101px 0 no-repeat;}
+#panel5 {left: calc(100% - (5*45px)); width: 36px;
+  background: transparent url(https://global-diary.sjj3.repl.co/images/sprites.jpg)
+   -135px 0 no-repeat;}
+#panel6 {left: calc(100% - (6*45px)); width: 36px;
+  background: transparent url(https://global-diary.sjj3.repl.co/images/sprites.jpg)
+   -169px 0 no-repeat;}
+
+ul#footlist li a {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+}
+
+ul#footlist li a:hover {
+  background-color: rgba(231,181,179,0.5 );
+  padding: 0;
+  margin: 0;
+}
+
+#footlist::before {
+  position: absolute;
+  content: "Copyright 2020 Dear Diary";
+  background-color: transparent;
+  color: #666;
+  left: 9px; top: 9px;
+}
+
+.wrapper{
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header, .footer{
+  height: 50px;
+  background: transparent;
+  color: inherit;
+}
+.content {
+  display: flex;
+  flex: 1;
+  background: transparent;
+  color: inherit; 
+  width: 90%;
+}
+.columns{
+  display: flex;
+  flex:1;
+  align-items: center;
+}
+.main{
+  background: transparent;
+  width: 35%;
+  flex: 1;
+  order: 2;
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+.sidebar-first{
+  background: transparent;
+  .background: red;
+  width: 25%;
+  flex: 1;
+  order: 1;
+  padding-top: 30px;
+  align-items: center;
+}
+.sidebar-second{ 
+  background: transparent;
+  .background: red;
+  width: 25%;
+  flex: 1;
+  order: 3;
+  padding-top: 30px;
+  align-items: center;
+}
+
+section.content.iboxes aside {
+  width: 30%;
+  margin: 20px;
+}
+
+section.content.iboxes aside h2 + p {
+  font-size: 1em;
+  min-height: 150px;
+  text-align: center;
+}
+
+section.content.iboxes aside h2 {
+  text-align: center;
+}
+
+
+      a.button {
+        text-decoration: none;
+      }
+      button.button {
+        border: none;
+        background-color: transparent;
+        font-family: Verdana,sans-serif;
+        font-size: 1em;
+        padding: 0;
+        cursor: pointer;
+      
+        @media screen and (-ms-high-contrast: active) {
+          border: 2px solid currentcolor;
+        }
+      }
+
+      a.button,
+      button.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5792ff;
+        background-image: linear-gradient(0deg, #755 0%, #755 50%, #977 100%);
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+        padding: 0.25em 0.75em;
+        min-width: 15ch;
+        min-height: 44px;
+        text-align: center;
+        line-height: 1.1;
+        transition: 220ms all ease-in-out;
+        }
+
+        a.button:hover, button.button:hover {
+          background-color: #4a7dff;
+          background-image: linear-gradient(0deg, #5f4444 0%, #5f4444 50%, #7a5f5f 100%);
+        }
+
+        a.button:active, button.button:active {
+          background-color: #3253cc;
+          background-image: linear-gradient(0deg, #473333 0%, #473333 50%, #5c4747 100%);
+        }
+
+        a.button:focus, button.button:focus {
+          outline-style: solid;
+          outline-color: transparent;
+          box-shadow: 0 0 0 4px #7a5f5f;
+        }
+
+article {
+  margin: 15px auto;
+  width: 60%;
+  padding: 25px;
+  background-color: transparent;
+  opacity: 0.8;
+  text-align: left;
+}
+
+article h1 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+  color: #fff;
+  background-color: #369;
+}
+
+article p {
+  font-size: 1.2em;
+}
+
+article p, article h2 {
+  color: #000;
+  margin: 20px 0;
+}
+
+article p img {
+  display: inline;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+article form {
+  clear: both;
+  margin: 20px auto 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 2em 1em 1em 1em;
+}
+
+article form ul {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  border: 0px solid #fff;
+  border-radius: 8px;
+  background-color: #f77;
+  opacity: 1;
+  color: #fff;
+}
+
+article form li + li {
+  margin-top: 1em;
+}
+
+article form label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+article input, 
+article textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 150px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+article input:focus, 
+article textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+article textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+article .button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+article button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #369;
+  color: #fff;
+}
+.row {
+  display:flex;
+}
+.row div{
+  margin-right: 30px;
+}
